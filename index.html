@@ -9,7 +9,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-/* نفس التصميم بالضبط */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --bg-0:#05070D; --text-0:#F5F7FA; --text-1:#B8C2D4; --text-2:#7A87A0;
@@ -323,7 +322,7 @@ body.light .pdf-btn{background:linear-gradient(135deg,rgba(37,99,235,0.12),rgba(
   </div>
 </footer>
 
-<!-- TERMS MODAL (نفس المودال بالضبط) -->
+<!-- TERMS MODAL -->
 <div class="terms-overlay" id="termsOverlay">
   <div class="terms-modal">
     <div class="terms-header">
@@ -441,8 +440,8 @@ body.light .pdf-btn{background:linear-gradient(135deg,rgba(37,99,235,0.12),rgba(
     });
   });
 
-  // Terms
-  const K='sandall_factory_terms_consent',V='1.0';
+  // Terms (اسم المفتاح هنا خاص بالدمازين عشان ميتعارضش مع القضارف)
+  const K='sandall_damazin_terms_consent',V='1.0';
   const oT=document.getElementById('termsOverlay'),tC=document.getElementById('termsCheckbox'),tB=document.getElementById('termsAcceptBtn'),tV=document.getElementById('viewTermsBtn');
   const tCL=document.querySelector('.terms-consent'),tF=document.querySelector('.terms-footer'),tH=document.querySelector('.terms-header'),tBody=document.getElementById('termsBody');
   const cB=document.createElement('button');cB.className='terms-close-btn';cB.innerHTML='✕';cB.style.display='none';tH.appendChild(cB);
